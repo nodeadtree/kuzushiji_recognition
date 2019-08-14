@@ -1,0 +1,35 @@
+\documentclass[11pt]{article}
+\usepackage{./preamble}
+\usepackage{subfiles}
+
+% Settings kinda things
+\newcommand{\name}{Juniper Overbeck} % Hopefully this doesn't need to change again
+\newcommand{\ttle}{Kuzushiji Review} % Title goes here
+
+\begin{document}
+\begin{itemize}
+    \item \underline{RNN Based Uyghur Text Line Recognition and its Training Strategy:} In retrospect, this paper
+        should never have made it onto the list. Mine it for the references it used, but \textit{never} cite a paper
+        like this because of the obvious ethical problems. This paper is bad, its authors should feel bad, and they
+        should be stricken from academia for their contribution to the racism against the Uyghur people in China.
+    \item \underline{A Human-Inspired Recognition System for Pre-Modern Japanese Historical Documents:} This is
+        highly relevant and should be one of the first papers that we take a serious look at, it uses the types of
+        models we're interested in, is one of the most current papers on this exact classification task, and it is
+        performed with the assistance of Japanese Literature Researchers, which should yield good domain knowledge.
+        \begin{itemize}
+            \item \underline{Classifier:} LSTM
+            \item \underline{Accuracy:} $9.87\%$ to $53.81\%$ SER (sequence error rate)
+                on the Level 2 and 3 CODH "Pattern Recognition and Media Understanding (PRMU) Algorithm Contest for
+                Kuzushiji recognition" dataset. Not ideal for our cases.
+            \item \underline{Relation to dataset:} Same language and macro classification task
+            \item \underline{Technical Novelty:} Uses attention based/inspired recognition system that
+                attempts to mimic how the human eye pays attention to the writing, in order to establish
+                which parts of the art are actually the Kuzushiji text.
+            \item \underline{Problems:} This is focused on the sequence error improvement, which conflicts
+                with the dataset provided for the Kaggle competition, as the Kaggle competition is focused on the
+                individual character recognition and placement. Maybe there's something here, but the big
+                takeaway is to look for the CODH Kuzushiji classification contest, and see if there's anything
+                fruitful in papers associated with the contest.
+        \end{itemize}
+\end{itemize}
+\end{document}
